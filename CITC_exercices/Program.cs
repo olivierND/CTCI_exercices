@@ -11,7 +11,6 @@ namespace CITC_exercices
             Type[] types = GetTypesInNamespace();
             Array.Sort(types, (t1, t2) => string.Compare(t1.Name, t2.Name, StringComparison.Ordinal));
 
-
             int chapter = 1;
 
             Console.WriteLine(
