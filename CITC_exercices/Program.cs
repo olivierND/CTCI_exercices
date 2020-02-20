@@ -24,10 +24,20 @@ namespace CITC_exercices
 
                 if (i + 1 < types.Length && types[i].Namespace != types[i + 1].Namespace)
                 {
-                    Console.WriteLine(
-                        Environment.NewLine +
-                        "-------------------------------------- Chapter " + ++chapter + " --------------------------------------" +
-                        Environment.NewLine);
+                    if (types[i + 1].Namespace == "CITC_exercices.Suppl")
+                    {
+                        Console.WriteLine(
+                            Environment.NewLine +
+                            "-------------------------------------- Additionnal Exercices --------------------------------------" +
+                            Environment.NewLine);
+                    }
+                    else
+                    {
+                        Console.WriteLine(
+                            Environment.NewLine +
+                            "-------------------------------------- Chapter " + ++chapter + " --------------------------------------" +
+                            Environment.NewLine);
+                    }
                 }
             }
         }
